@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"content="width=device-width, initial-scale=1">
+<title>Keira's StoryBook</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+* {
+  box-sizing: border-box;
+  }
+  
+  body {
+  margin: 0;
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.header {
+   top: 0;
+   left: 0;
+   width: 100%;
+   position: static;
+   background-color:#ffb3b3;
+   padding: 20px;
+   text-align: center;
+   z-index:10;
+   display: flex;
+   justify-content: flex-start;
+   align-items: centers;
+   }
+   
+  footer {
+     background-color: #ffb3b3;
+	 text-align: center;
+	 padding: 10px 0;
+	 position: relative;
+	 bottom: 0;
+	 width: 100%;
+ }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+ li { 
+   margin: 0 15px;
+   }
+   
+ li a {
+    display: block;
+	padding: 8px;
+    background-color:#ffb3b3;
+	}
+a {
+  text-decoration:none;
+  color: black;
+  }
+ h1 {
+   font-family: "Lucida Handwriting", "Brush Script", cursive;
+   }
+   
+ p {
+   z-index:5;
+   color:black;
+   font-family:"Sofia", Times New Roman, sans-serif;
+   font-size: 20px;
+   }
+   
+   .content {
+      height: 1500px;
+	  padding: 20px;
+	}
+	
+	#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ff8080;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+	
+	#myBtn:hover {
+  background-color: #555;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+</style>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><span style='font-size:30px;'>&#8593;</button>
+<div class="header">
+<div class="container-fluid">
+      <a class="navbar-brand" href="Splash%20Page.html">
+	      <img src="../Assets/2.png" alt="Logo" style="width:140px;" class="rounded-pill">
+		</a>
+	</div>
+
+<h1 style= "text-align: center;">Keira's<br> Storybook</h1>
+ <ul>
+   <li><a href="Splash%20Page.html"><img src="../Assets/4.png" alt="Index" style="width:100px;"></a></li>
+   <li><a href="Professional%20Page.html"><img src="../Assets/5.png" alt="Professional" style="width:100px;"></a></li>
+   <li><a href="Personality%20Page.html"><img src="../Assets/6.png" alt="Personlity" style="width:100px;"></a></li>
+   <li><a href="Personal%20Development%20Page.html"><img src="../Assets/7.png" alt="Personal Development" style="width:100px;"></a></li>
+   <li><a href="Contact.html"><img src="../Assets/10.png" alt="Contact" style="width:100px;"></a></li>
+ </ul>
+</div>
+<br>
+<br>
+
+   <script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<h1 style = "text-align: center;">Chapters</h1>
+<p style="text-align: center; font-family: Sofia; padding: 20px; margin: 10px auto; background-color: #ffb3b3; width: 400px; border-radius: 10px;"><a href="#C1"><strong>About Me</strong></p>
+<p style="text-align: center; font-family: Sofia; padding: 20px; margin: 10px auto; background-color: #ffb3b3; width: 400px; border-radius: 10px;"><a href="#C2"><strong>Traits and Their Impacts</strong></p>
+<p style="text-align: center; font-family: Sofia; padding: 20px; margin: 10px auto; background-color: #ffb3b3; width: 400px; border-radius: 10px;"><a href="#C3"><strong>My Hero</strong></p>
+<p style="text-align: center; font-family: Sofia; padding: 20px; margin: 10px auto; background-color: #ffb3b3; width: 400px; border-radius: 10px;"><a href="#C4"><strong>Personality Test</strong></p>
+<br>
+<br>
+<br>
+<h1 id="C1" style = "text-align: center;">About Me</h1>
+<p style= "text-align: center; font-family: Sofia; padding: 20px; margin: 50px; background-color: #ff8080; width: 90%; border-radius: 10px 50px;">Hi! My Name is Keira Miller, I am 17 years old. I was born on December 29, 2006 at Savanna-La-Mar General Hospital in Westmoreland.
+Currently attending the Montego Bay Community College, I am pursing a degree in Modualr Computer Studies, in order to fufill my ambitions of becoming a Software Engineer. I have a particularly introverted persona, this is partially due to years worth of social anxiety. 
+However I am slowly but surely coming out of that hole by trying new things. Due to this I have developed new hobbies and loves over the years, this includes: singing, playing instruments such as drums, keyboard, violin and bass, reading etc.</p>
+<img src="../Assets/Keke_2.jpg" style="width: 300px; height: 400px; margin: 20px 50px; padding: 20px; background-color: #ff8080; border-radius: 10px;">
+<img src="../Assets/Drumming.gif" style="width: 400px; height: 400px; margin: 20px 50px; padding: 20px 1px; background-color: #ffe6e6; border-radius: 10px;">
+<img src="../Assets/Keke_Shades.jpg" style="width: 300px; height: 400px; margin: 20px 50px; padding: 20px; background-color: #ffb3b3; border-radius: 10px;">
+<h1 id="C2" style = "text-align: center;">Traits and Their Imapcts</h1>
+<p style= "text-align: center; font-family: Sofia; padding: 20px; margin: 50px; background-color: #ffb3b3; width: 90%; border-radius: 5px 50px;">A single Human body contains a plethora of various traits and emotions, from happy or sad, calm or angry, mean or kind and much more. 
+However, there is always that one trait or emotion that stands out above the rest, the one that defines certain aspects of your personality. For example, people tend to avoid Jane because she, most of the time, exhibits unkindness towards everybody, or, people tend to gravitate
+towards Mark because he is always kind and generous to others. This is known as your "Strongest Trait". My strongest trait would be my need to succeed. Since my early days in highschool i have always had a fear of failing, so i always made sure i gave 100% in everything I do. 
+<br> <br>This has never been a bad thing for me, on the contrary, it made me work especially harder in my academics. Always striving to be the top student, to be on the honor roll. Now that practice has translated form high school to college, and seeing as this is the last step towards becoming a Software Engineer, 
+i'd say that my strongest trait is impacting my academic life in a positive way. </p> 
+<h1 id="C3" style = "text-align: center;">My Hero</h1>
+<p style= "text-align: center; font-family: Sofia; padding: 20px; margin: 50px; background-color: #ffe6e6; width: 90%; border-radius: 5px 50px;">Most people have a hero, someone they look up to and often model their life after. A hero can be anybody, from your parents, to your teacher, or even a friend,
+for me, it's a musician. Ludwig van Beethoven. One of if not the most influencial musicians of his time, some would say of <strong>all</strong> time. My all time favorite quote from Beethoven is: "Don't only practice your art, but force your way into its secrets; art deserves that, for it and knowledge
+can raise man to the divine." To me, those words aren't just about music, its about life, and everything you do in it. It reminds me that no matter what you do, as long as its your passion, pur your heart and soul in it and don't look back. <br><br> Ludwig van Beethoven was born in the late 1700s, he was a German composer and pianist,
+his compositions combined vocals and instruments pushing the boundaries of sonata, quartet, symphony and concerto. Beethoven died at the age of 56, with the last 10 years of his life spent composing some of his most important works. So why did i choose him as my hero? Well it wasn't because he was one of the greatest musicians ever,
+it is because he is deaf. Yes, deaf, a deaf musician was not on anybody's bingo card in his time but he didn't care. He never let his growing defect stop him from doing what he loved, however he wasn't born that way, he started going deaf in the early 1800s when he realized he struggled to make out the words spoken to him in conversation.
+But even then he kept going until he died, that's why he's my hero. R.I.P Ludwig van Beethoven.</p>
+<img src="../Assets/Beethoven.png" alt="Beethoven" class="center" style="width: 600px; height: 600px;">
+<h1 id="C4" style = "text-align: center;">Personality Test</h1>
+<img src="../Assets/Personality_Test.png" alt="Personality Test Result" style ="float: left; margin-right: 10px; width: 500px; height: auto; padding: 10px; border-radius: 50px; background-color: #ff6363;">
+<p style= "text-align: center; font-family: Sofia; padding: 20px; margin: 50px; background-color: #ff8080; width: 90%; border-radius: 5px 50px;">I took the Keirsey Personality Test. My result was, Guardian. If I am being completely honest with myself, I would say that the result is 100% accurate in my individual case. However do I think
+it is accurate in general? Yes, I do. The Test asked me a total of 80 questions, each of them were extremely short, as in no more than 5 words short, but incredibly concise. Despite their simplicity, each question made me really think hard, and i think thats what makes a good personality test, a group of question collecting simply but complex
+data that make enough sense when pieced together to be able to come to a clear conclusion. <br><br>I personally think my result was accurate because i have always been the person who moves away from conflict and leans more towards peace. The middle ground is where i live. I also care deeply for the people close to me and am compassion to even
+complete strangers. I am a Guardian.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <footer>
+      <p>&copy; 2024 Keira's Storybook. All Rights Reserved.</p>
+	  <p>Contact: <a href="mailto:keiramiller100@gmail">keiramiller100@gmail.com</a></p>
+	  <ul>
+   <li><a href="Splash%20Page.html">Index</a></li>
+   <li><a href="Professional%20Page.html">Professional</a></li>
+   <li><a href="Personality%20Page.html">Personality</a></li>
+   <li><a href="Personal%20Development%20Page.html">Personal Development</a></li>
+   <li><a href="Contact.html">Contact</a></li>
+ </ul>
+</body>
+</html>

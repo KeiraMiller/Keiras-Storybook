@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"content="width=device-width, initial-scale=1">
+<title>Keira's StoryBook</title>
+<style>
+* {
+  box-sizing: border-box;
+  }
+  
+  body {
+  margin: 0;
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.header {
+   top: 0;
+   left: 0;
+   width: 100%;
+   position: static;
+   background-color:#ffb3b3;
+   padding: 20px;
+   text-align: center;
+   z-index:10;
+   display: flex;
+   justify-content: flex-start;
+   align-items: centers;
+   }
+   .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #ff8080;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+   
+  footer {
+     background-color: #ffb3b3;
+	 text-align: center;
+	 padding: 20px ;
+	 position: relative;
+	 bottom: 0;
+	 width: 100%;
+	 margin: 0;
+	 z-index: 0;
+ }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+ li { 
+   margin: 0 15px;
+   font-family: "Sofia", Georgia, sans-serif;
+   font-size: 20px;
+   }
+   
+ li a {
+    display: block;
+	padding: 8px;
+    background-color:#ffb3b3;
+	}
+a {
+  text-decoration:none;
+  color: black;
+  }
+ h1 {
+   font-family: "Lucida Handwriting", "Brush Script", cursive;
+   }
+   
+ p {
+   z-index:5;
+   color:black;
+   font-family:"Sofia", "Georgia", sans-serif;
+   font-size: 20px;
+   }
+   
+   .content {
+      height: 1500px;
+	  padding: 20px;
+	}
+	
+	#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ff8080;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+	
+	#myBtn:hover {
+  background-color: #f1f1f1;
+}
+
+.resume {
+     max-width: 800px;
+	 margin: auto;
+	 padding: 20px;
+	 background-color:#ffffff;
+	 border-radius: 10px;
+	 box-shadow: 0 4px 8px rgba(0,0,0,1);
+	 text-align: center;
+	}
+	
+.resume h2 {
+     color: #ffb3b3;
+	 text-decoration: underline;
+	}
+.resume img {
+     width: 300px;
+	 height: auto;
+	 margin-left: 10px;
+	 margin-right: 10px;
+	}
+</style>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><span style='font-size:20px;'>&#8593;</button>
+<div class="header">
+<div class="container-fluid">
+      <a class="navbar-brand" href="Splash%20Page.html">
+	      <img src="../Assets/2.png" alt="Logo" style="width:140px;" class="rounded-pill">
+		</a>
+	</div>
+
+<h1 style= "text-align: center;">Keira's<br>Storybook</h1>
+ <ul>
+   <li><a href="Splash%20Page.html"><img src="../Assets/4.png" alt="Index" style="width:100px;"></a></li>
+   <li><a href="Professional%20Page.html"><img src="../Assets/5.png" alt="Professional" style="width:100px;"></a></li>
+   <li><a href="Personality%20Page.html"><img src="../Assets/6.png" alt="Personlity" style="width:100px;"></a></li>
+   <li><a href="Personal%20Development%20Page.html"><img src="../Assets/7.png" alt="Personal Development" style="width:100px;"></a></li>
+   <li><a href="Contact.html"><img src="../Assets/10.png" alt="Contact" style="width:100px;"></a></li>
+ </ul>
+</div>
+<br>
+<br>
+<h1 style="text-align: center; font-family: Sofia;">Cirriculum Vitae</h1>
+
+<div class="content">
+    <div class="resume">
+	     <h1 style="padding: 20px; background-color:#ffe6e6; border-radius: 50px;">Keira Miller</h1>
+	     <img src="../Assets/Professional.png" alt="Image">
+		<div>
+		<h1 style="padding: 20px; background-color: #ff8080; border-radius: 50px;">Mission Statement</h1>
+		<p>
+		   "My mission is to deliver exceptional service through a blend of creativity, technician expertise, and a 
+		   commitment to problem-solving. While focusing on continuous growth, I aim to contribute positively to my 
+		   team and environment by putting to good use, my skills in customer relations, inventory management, and technology.
+		   I am committed to creating cooperative and effective work environments, and I approach every position with energy and adaptability."
+		   
+		</p>
+		
+		<h1 style="padding: 20px; background-color: #ff8080; border-radius: 50px;">Vision Statement</h1>
+		<p>
+		   "I anticipate producing impact through attentive customer service, constant improvement, and creative ideas. 
+		   By improving my experience in technology and interpersonal communication, I aspire to become a competent, flexible 
+		   professional capable of generating positive change in any workplace. In order to meet the changing needs of customers and coworkers, 
+		   I want to encourage and support a work culture that values efficiency, creativity, and teamwork."
+		</p>
+		
+		<h1 style="padding: 20px; background-color: #ff8080; border-radius: 50px;">Objectives</h1>
+		<p>
+		   <li>To maintain humiltiy and honor in every and any field.</li>
+		   <li>To build myself more and more with each path I travel.</li>
+		   <li>To work diligently, efficiently, and effectively.</li>
+		   <li>To maintain composure and a steady mind in the face of pressure.</li>
+		</p>
+		
+        <h1 style="padding: 20px; background-color: #ff8080; border-radius: 50px;">Cirriculum Vitae</h1>
+        <p>
+            <strong>Professional Summary:</strong> <br>
+			</p>
+            <p style= "font-size:20px;">Cashier<br>
+			Supply One Enterprise, Little London P.O, Westmoreland, Jamaica W.I <br>
+			June 2019-2024<br>
+			</p>
+			<li>"Provided excellent customer service while assisting customers."</li>
+			<br><br>
+			<p style= "font-size:20px;">P.O.S Operator <br>
+			Supply One Enterprise, Little London P.O, Westmoreland, Jamaica W.I<br>
+			June 2021-2024<br>
+			</p>
+			<li>"Maintained the P.O.S system, including regular updates, troubleshooting issues, and correcting errors."</li>
+			<br><br>
+			<p style= "font-size:20px;">Inventory Keeper<br>
+			Supply One Enterprise, Little London P.O, Westmoreland, Jamaica W.I<br>
+			June 2020-2024<br>
+			</p>
+			<li>"Managed store inventory and notified the owner about low stock items."</li>
+			<br><br>
+			<p style= "font-size:20px;"><strong>Skills</strong><br>
+			<li>Musical Ability (Singing, Drumming</li>
+			<li>Creative Writing</li>
+			<li>Flexibilty</li>
+			<li>Problem-Solving</li>
+			<li>Time Management</li>
+			<li>Communication</li>
+			<li>Web Management</li>
+			<li>Public Speaking</li>
+			<li>Teamwork</li>
+			<li>Computer Skills(41 word/min)</li>
+			<li>Proficient in Microsoft Office, Google Docs, Google Forms</li>
+			</p>
+			
+        </p>
+        
+        <h2>Professional Qualifications</h2>
+        <p>
+            Montego Bay Community College<br>
+			2023-2023<br>
+			Certificate in Modular Computer Studies
+        </p>
+
+        <h2>Work Experience</h2>
+        <p>
+            <p style= "font-size:20px;">Cashier<br>
+			Supply One Enterprise, Little London P.O, Westmoreland, Jamaica W.I <br>
+			June 2019-2024<br>
+			</p>
+			<li>"Provided excellent customer service while assisting customers."</li>
+			<br><br>
+			<p style= "font-size:20px;">P.O.S Operator<br>
+			Supply One Enterprise, Little London P.O, Westmoreland, Jamaica W.I<br>
+			June 2021-2024<br>
+			</p>
+			<li>"Maintained the P.O.S system, including regular updates, troubleshooting issues, and correcting errors."</li>
+			<br><br>
+			<p style= "font-size:20px;">Inventory Keeper<br>
+			Supply One Enterprise, Little London P.O, Westmoreland, Jamaica W.I<br>
+			June 2020-2024<br>
+			</p>
+			<li>"Managed store inventory and notified the owner about low stock items."</li>
+        </p>
+
+        <h2>Education</h2>
+        <p>
+            Manning's School<br>
+			2018-2023<br>
+			Awards Granted- Leaving Certificate<br><br>
+			<p style= "font-size:20px;"><strong>Clubs and Societies</strong><br>
+			<li>Key Club; 2018-2023; Member and D.O.E</li>
+			<li>Chess Club; 2018-2023; Member, P.R.O, Secretary</li>
+			<li>Science Club; 2023; Member</li>
+			<li>Performing Arts Society; 2019-2023; Member and Drummer</li>
+			<li>Manning's School Chorale; 2023; Member</li>
+			<li>Manning's School Band; 2023; Singer</li>
+			<li>Writer's Club; 2023; Member</li>
+			<li>Netball Team; 2018 & 2022; Player</li><br><br>
+			</p>
+			<p style= "font-size:20px;"><strong>Academic and Club Achievements</strong><br>
+			<li>CSEC English A- Grade I</li>
+			<li>CSEC English B- Grade II</li>
+			<li>CSEC Mathematics- Grade III</li>
+			<li>CSEC Information Technology- Grade II</li>
+			<li>CSEC Human and Social Biology- Grade III</li>
+			<li>CSEC Principles of Business- Grade II</li>
+			<li>CSEC Geography- Grade III</li>
+			<li>CSEC Social Studies- Grade III</li>
+			<li>School Netball Player for 2 (non-consecutive) years</li>
+			<li>Chess Club Reserve Vice President-2019</li>
+			<li>Chess Club P.R.O- 2022</li>
+			<li>Chess Club Secretary-2023</li>
+			<li>Chess Team Member- 2022-2023</li>
+			<li>Key Club Director of Entertainment- 2022</li>
+			</p>
+			<br><br>
+			<p style= "font-size:20px;">Montego Bay Community College<br>
+			2023-Present<br>
+			Awards Granted- Certificate in Modular Computer Studies<br><br>
+			</p>
+			<p style= "font-size:20px;"><strong>Clubs and Societies</strong><br>
+			<li>Chess Club; 2023-2024</li>
+			<li>Circle K; 2023</li>
+			<li>The Montego Bay Community College Choir; 2023-2024</li>
+			<li>Art Club; 2024</li>
+			</p>
+			
+        </p>
+
+        <h2>Skills</h2>
+        <p>
+            <li>Musical Ability (Singing, Drumming</li>
+			<li>Creative Writing</li>
+			<li>Flexibilty</li>
+			<li>Problem-Solving</li>
+			<li>Time Management</li>
+			<li>Communication</li>
+			<li>Web Management</li>
+			<li>Public Speaking</li>
+			<li>Teamwork</li>
+			<li>Computer Skills (41 word/min)</li>
+			<li>Proficient in Microsoft Office, Google Docs, Google Forms</li>
+        </p>
+		
+		<h2>Community Service History</h2>
+		<p>
+		      <li>Repainting the playground of an Early Childhood school; October 22, 2022; Key Club International</li>
+			  <li>Coastal Cleanup at Crane Road Beach; September 17, 2022; Key Club International</li>
+			  <li>School Book Donation to the school library; September 30, 2022; Key Club International</li>
+			  <li>Volunteering at the Manning's School Library; 2024; College Community Service Project</li>
+	    </p>
+        
+		<h2>Desired Career</h2>
+		<p style= "font-size:20px;">Web Development</p>
+		<p style= "font-size:20px;"><strong>Skills Required</strong><br>
+		<li>Front-End Coding: To work as a web developer, you must be familiar with three basic programming languages used in building the front end (the user-interface side) of websites. </li>
+        <li>Back-End Programming Languages: Back-end development languages, or codes, connect the web to a database, keep track of users’ connections and run web applications.</li>
+        <li>SEO: Because clients want websites that perform well in search results, it’s important for the web developer’s work to be infused with a deep understanding of search engine optimization (SEO).</li>
+		<li>UX and UI Design: UX (user experience) and UI (user interface) are both important web designer skills because they are both integral to the process of planning and building any digital platform.</li>
+		<li>Program Frameworks: In web development, programming is chock-full of common tasks that most applications must solve. For example, when you type in the URL of a website, the application must resolve that URL and perform the necessary actions to bring up that website in your browser.</li>
+		<li>Problem Solving: The process of identifying a problem, developing possible solutions and taking the appropriate course of action is a skill that can be acquired through practice or technical training. </li>
+		</p>
+		<br><br>
+		<p style= "font-size:20px;"><strong>Job Requirements</strong><br>
+		<li>Technical Skills in HTML, JavaScript and CSS</li>
+		<li>Strong understanding of design and usabilty concepts</li>
+		<li>Bachelor's degree in Web Development or related field, or relevant experience.</li>
+		<li>Proficient in My SQL</li>
+		<li>Dedicated Team Player</li>
+		<li>Ability to thrive in fast-paced environments.</li>
+		</p>
+		<br><br>
+		<p style= "font-size:20px;"><strong>Qualifications</strong><br>
+		<li>Bachelor's Degree in Web development or related/relevant field.</li>
+		<li>All Skills listed above</li>
+		</p>
+		
+        <div class="tooltip">Need more info?
+            <span class="tooltiptext">References: Roxroy Roach- Chess Club Advisor/Chess Team Coach<br>
+			Paulette Franklin- Employer <br>
+			Mrs. Davidson- Community Service Supervisor (Library)<br>
+			Reverend Clover-Robinson- Church Pastor<br>
+			Jermaine Williams- Key Club Advisor</span> 
+        </div>
+    </div>
+</div>
+   <script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <footer>
+      <p style="font-family: Sofia;">&copy; 2024 Keira's Storybook. All Rights Reserved.</p>
+	  <p style="font-family: Sofia;">Contact: <a href="mailto:keiramiller100@gmail">keiramiller100@gmail.com</a></p>
+	  <ul>
+   <li><a href="Splash%20Page.html">Index</a></li>
+   <li><a href="Professional%20Page.html">Professional</a></li>
+   <li><a href="Personality%20Page.html">Personality</a></li>
+   <li><a href="Personal%20Development%20Page.html">Personal Development</a></li>
+   <li><a href="Contact.html">Contact</a></li>
+ </ul>
+</body>
+</html>
